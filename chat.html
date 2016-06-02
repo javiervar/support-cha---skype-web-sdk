@@ -12,8 +12,14 @@
 	<link rel="stylesheet" type="text/css" href="css/chat.css">
 </head>
 <body>
-		<div class="menu">
-            <div class="back"><img src="img/close.png" id="btnLogOut"></div>
+	<div class="to"><input type="text" name="to" id="to" placeholder="test@gmail.com"></div>
+
+	<div class="btn"> <i class="fa fa-comments fa-4x" aria-hidden="true" id="chat-btn"></i></div>
+	
+
+	<div class="chat-container" id="chat-container">
+	<div class="menu">
+       <div class="back"><img src="img/close.png" id="btnLogOut"></div>
 
             <div class="name">Lorem impsun...</div>      
         </div>
@@ -21,10 +27,11 @@
     <div id="status" class="status">
     	<p>Please wait for an agent..</p>
     </div>
-    
+     
     
     </ol>
-    <input class="textarea" type="text" placeholder="Type here!" id="msg" disabled="true" /> 
-
+    <div><input class="textarea" type="text" placeholder="Type here!" id="msg" disabled="true" /> </div>
+    
+	</div>
 </body>
 </html>

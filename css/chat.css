@@ -1,8 +1,50 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
+.to{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
+.to input{
+	width: 400px;
+	padding: 5px;
+}
+.chat-container{
+	display: none;
+	width: 30%;
+	height: 560px;
+	background: #e5e5e5;
+	 
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	position: absolute;
+    bottom: 0;
+    /* float: right; */
+    right: 0;
+    margin: 0px 10px;
+}
+.chat-container:hover{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.btn{
+	width: 100px;
+	text-align: center;
+	height: 100vh;
+  	line-height: 100vh;
+  	margin: 0 auto;	
+  	display: block;
+}
+.btn i{
+	cursor: pointer;
+}
+.btn i:hover{
+	color: #999;
+
+}
+
 html, body {
-    background: #e5e5e5;
+    
     font-family: 'Lato', sans-serif;
     margin: 0px auto;
 }
@@ -26,7 +68,7 @@ a{
 }
 
 .menu {
-    position: fixed;
+   
     top: 0px;
     left: 0px;
     right: 0px;
@@ -41,7 +83,7 @@ a{
 }
 
 .back {
-    position: absolute;
+    float: right;
     width: 40px;
     height: 50px;
     top: 0px;
@@ -49,7 +91,7 @@ a{
     color: #fff;
     line-height: 50px;
     font-size: 30px;
-    padding-left: 10px;
+    padding-right: 10px;
     cursor: pointer;
 }
 .back img {
@@ -59,7 +101,6 @@ a{
     background: rgba(255,255,255,0.2);
 }
 .name{
-    position: absolute;
     top: 5px;
     left: 50px;
     font-family: 'Lato';
@@ -82,11 +123,12 @@ a{
 /* M E S S A G E S */
 
 .chat {
+	height: 398px;
+	overflow-y: auto;
     list-style: none;
     background: none;
     margin: 0;
     padding: 0 0 50px 0;
-    margin-top: 60px;
     margin-bottom: 10px;
 }
 .chat li {
@@ -245,8 +287,7 @@ a{
 /* T Y P E */
 
 input.textarea {
-    position: fixed;
-    bottom: 0px;
+   	
     left: 0px;
     right: 0px;
     width: 100%;
@@ -255,8 +296,7 @@ input.textarea {
     background: #fafafa;
     border: none;
     outline: none;
-    padding-left: 55px;
-    padding-right: 55px;
+     
     color: #666;
     font-weight: 400;
 }
