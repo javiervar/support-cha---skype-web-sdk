@@ -6,7 +6,7 @@
     var domain="metio.net";
     var person="";
     var version="1.0";
-    var webTicket="Bearer cwt=AAEBHAEFAAAAAAAFFQAAAKuuXmvzGAIi1fxkedIGAACBEFGt0YtqM3BVrxhrtkQkKFqCAlsbgyC-ZOAjt5WmI8-kppquwTtN_IiseygyWxrrSQl9hIBdnoYIR434pVCL0wgNEPafGCkKskFVn6NvOvBYlbY";
+    var webTicket="Bearer cwt=AAEBHAEFAAAAAAAFFQAAAKuuXmvzGAIi1fxkeXIGAACBEFGt0YtqM3BVrxhrtkQkKFqCApwggyDTO0pIM3DEccV7A7uNkkMJWvnOB2sfsOs4Zp3K2V6aq4YIl6vbCxSM0wgNEPafGCkKskFVn6NvOvBYlbY";
 
 $('#chat-btn').click(function () {
 	person=document.getElementById("to").value;
@@ -113,7 +113,7 @@ $('#chat-btn').click(function () {
 }
 
 function time(){
-	 
+
 	var datetime =   new Date().toLocaleTimeString('en-US', { hour12: false, 
                                              hour: "numeric", 
                                              minute: "numeric"});;
